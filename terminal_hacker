@@ -10,7 +10,6 @@ def th():
         print ("Welcome to the Machine")
         break
       else:
-        password != "password"
         i += 1
         if i < 4:
           print ("Try again")
