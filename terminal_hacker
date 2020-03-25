@@ -1,6 +1,6 @@
 # Terminal Hack by Brent Kaimanu Kohler AKA deusopus
 def terminal_hack():
-  admin = input("What is your UserID")
+  admin = input("Input your UserID: ")
   if admin != "deusopus":
     print(f"Welcome, {admin}")
     i = 1
