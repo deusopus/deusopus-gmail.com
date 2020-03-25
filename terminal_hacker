@@ -8,11 +8,13 @@ def login():
       if password == "password":
         print ("Welcome to the Machine")
         break
-      elif password != "password":
+      else:
+        password != "password"
         i += 1
         if i < 4:
           print ("Try again")
-        elif i == 4:
+        else:
+          i == 4
           print ("Access Denied")
           print ("loading Disney.com...")
   else:
