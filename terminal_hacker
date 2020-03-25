@@ -1,0 +1,22 @@
+def terminal():
+  admin = input("What is your UserID")
+  if admin == "deusopus":
+    print("Welcome, Brent")
+    i = 1
+    while i < 4:
+      password = input("Input your password, please: ")
+      if password == "password":
+        i = 4
+        print ("Welcome to the Machine")
+      elif password != "password":
+        i += 1
+        if i < 4:
+          print ("Try again")
+        elif i == 4:
+          print ("Access Denied")
+          print ("loading Disney.com...")
+  else:
+    print ("Invalid UserID")
+    print ("loading Disney.com...")
+  return
+terminal()
