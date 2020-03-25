@@ -1,4 +1,4 @@
-def login():
+def terminal():
   admin = input("What is your UserID")
   if admin == "deusopus":
     print("Welcome, Brent")
@@ -21,4 +21,4 @@ def login():
     print ("Invalid UserID")
     print ("loading Disney.com...")
   return
-login()
+terminal()
