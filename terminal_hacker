@@ -35,8 +35,5 @@ def terminal_hack():
           i == 4
           print ("Access Denied")
           print ("loading Disney.com...")
-  else:
-    print ("Invalid UserID")
-    print ("loading Disney.com...")
   return
 terminal_hack()
