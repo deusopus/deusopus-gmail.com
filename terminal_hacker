@@ -1,4 +1,4 @@
-def terminal():
+def login():
   admin = input("What is your UserID")
   if admin == "deusopus":
     print("Welcome, Brent")
@@ -6,8 +6,8 @@ def terminal():
     while i < 4:
       password = input("Input your password, please: ")
       if password == "password":
-        i = 4
         print ("Welcome to the Machine")
+        break
       elif password != "password":
         i += 1
         if i < 4:
@@ -19,4 +19,4 @@ def terminal():
     print ("Invalid UserID")
     print ("loading Disney.com...")
   return
-terminal()
+login()
