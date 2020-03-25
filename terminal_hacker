@@ -1,24 +1,7 @@
 # Terminal Hack by Brent Kaimanu Kohler AKA deusopus
-def terminal_hack():
+def th():
   admin = input("Input your UserID: ")
-  if admin != "deusopus":
-    print(f"Welcome, {admin}")
-    i = 1
-    while i < 4:
-      password = input("Input your password, please: ")
-      if password == "password":
-        print ("Welcome to the Machine")
-        break
-      else:
-        password != "password"
-        i += 1
-        if i < 4:
-          print ("Try again")
-        else:
-          i == 4
-          print ("Access Denied")
-          print ("loading Disney.com...")
-  elif admin == "deusopus":
+  if admin == "deusopus":
     print ("Hello, Master")
     i = 1
     while i < 4:
@@ -35,5 +18,8 @@ def terminal_hack():
           i == 4
           print ("Access Denied")
           print ("loading Disney.com...")
+  else:
+    print ("Invalid UserID")
+    print ("loading Disney.com...")
   return
-terminal_hack()
+th()
