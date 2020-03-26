@@ -1,23 +1,25 @@
-# Terminal Hacker by Brent Kaimanu Kohler AKA deusopus
-def term_hack():
-  admin = input("Input your UserID: ")
-  if admin == "deusopus":
-    print ("Hello, Master")
-    i = 0
-    while i <= 2:
-      password = input("Input your password, please: ")
-      if password == "password":
-        print ("Welcome to the Machine")
-        break
+# Fruit Score by Brent Kaimanu Kohler AKA deusopus
+def fruit_score():
+  score = 0
+  fruits = ['apple', 'pear', 'banana', 'orange', 'lemon', 'lime', 'plum', 'grapes', 'kiwi']
+  while score >= 0:
+    fruit = input("Guess a fruit: ")
+    if fruit == "quit":
+      print("You did well")
+      print(f"Score: {score}")
+      print("Thanks for playing")
+      break
+    elif fruit.lower() in fruits:
+      print("Yes")
+      score += 1
+      print(f"Score: {score}")
+    else:
+      score -= 1
+      print("No")
+      if score == 0:
+        print("Game Over")
+        break     
       else:
-        i += 1
-        if i <= 2:
-          print ("Try again")
-        else:
-          print ("Access Denied")
-          print ("loading Disney.com...")
-  else:
-    print ("Invalid UserID")
-    print ("loading Disney.com...")
+        print(f"Score: {score}")
   return
-term_hack()
+fruit_score()
