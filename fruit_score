@@ -1,4 +1,9 @@
 # Fruit Score by Brent Kaimanu Kohler AKA deusopus
+# Guess a fruit on the list and earn a point
+# Guess incorrectly and lose a point
+# If you lose all your points, "GAME OVER"
+# Enter "exit" at any time to quit
+
 def fruit_score():
   score = 0
   fruits = ['apple', 'pear', 'banana', 'orange', 'lemon', 'lime', 'plum', 'grapes', 'kiwi']
