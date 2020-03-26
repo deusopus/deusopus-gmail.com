@@ -3,6 +3,7 @@
 # Guess the password
 # You must guess the administator UserID on the first try
 # You have three chances to guess the administrator password
+# Fail and be re-routed to Disney.com (lol)
 
 def term_hack():
   admin = input("Input your UserID: ")
