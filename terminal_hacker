@@ -1,5 +1,5 @@
-# Terminal Hack by Brent Kaimanu Kohler AKA deusopus
-def th():
+# Terminal Hacker by Brent Kaimanu Kohler AKA deusopus
+def term_hack():
   admin = input("Input your UserID: ")
   if admin == "deusopus":
     print ("Hello, Master")
@@ -20,4 +20,4 @@ def th():
     print ("Invalid UserID")
     print ("loading Disney.com...")
   return
-th()
+term_hack()
