@@ -9,3 +9,5 @@ DOGE: D8eQgEX3B3TJYqFDgYQMj6RbfxvrhJEu5K
 
 Mahalo!
 -deusopus
+
+[![Run on Repl.it](https://repl.it/badge/github/deusopus/grass-shack-games)](https://repl.it/github/deusopus/grass-shack-games)
