@@ -4,7 +4,7 @@ def fruit_score():
   fruits = ['apple', 'pear', 'banana', 'orange', 'lemon', 'lime', 'plum', 'grapes', 'kiwi']
   while score >= 0:
     fruit = input("Guess a fruit: ")
-    if fruit == "quit":
+    if fruit == "exit":
       print("You did well")
       print(f"Score: {score}")
       print("Thanks for playing")
