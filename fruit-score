@@ -1,3 +1,4 @@
+#Fruit Score by Brent Kaimanu Kohler AKA deusopus
 def fruit_score():
   score = 0
   fruits = ['apple', 'pear', 'banana', 'orange', 'lemon', 'lime', 'plum', 'grapes', 'kiwi']
