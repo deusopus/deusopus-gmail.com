@@ -16,7 +16,7 @@ def fruit_score():
     else:
       score -= 1
       print("No")
-      if score == 0:
+      if score <= 0:
         print("Game Over")
         break     
       else:
