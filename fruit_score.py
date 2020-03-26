@@ -1,4 +1,4 @@
-# Fruit Score by Brent Kaimanu Kohler AKA deusopus
+# 'Fruit Score' by Brent Kaimanu Kohler AKA deusopus
 # Guess a fruit on the list and earn a point
 # Guess incorrectly and lose a point
 # If you lose all your points, "GAME OVER"
@@ -13,7 +13,7 @@ print ("Enjoy!")
 
 def fruit_score():
   score = 0
-  fruits = ['apple', 'pear', 'banana', 'orange', 'lemon', 'lime', 'plum', 'grapes', 'kiwi']
+  fruits = ['apple', 'pear', 'banana', 'orange', 'lemon', 'lime', 'plum', 'grapes', 'kiwi', 'dragonfruit', 'cherries', 'grapefruit', 'guava', 'mango', 'papaya']
   while score >= 0:
     fruit = input("Guess a fruit: ")
     if fruit == "exit":
