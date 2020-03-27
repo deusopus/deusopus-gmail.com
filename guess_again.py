@@ -19,3 +19,11 @@ def guess_again():
       print("Wrong")
       x += 1
 guess_again()
+
+while True:
+  restart = input("Press 'Enter' to play again. Enter 'exit' to quit")
+  if restart.lower() != "exit":
+    guess_again()
+  else:
+    print("Thanks for playing!")
+    break
