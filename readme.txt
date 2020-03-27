@@ -1,5 +1,6 @@
-Aloha and thank you for visiting 'Grass Shack Games'
-If you enjoy my efforts, consider donating to my fund...
+Aloha!
+Thank you for visiting 'Grass Shack Games'.
+If you enjoy my efforts, consider sponsoring me.
 
 paypal : paypal.me/tipmebig 
 cash app: $deusopus 
@@ -8,4 +9,4 @@ LTC: LNUc3ShzvB1my1GdaJdo9uJ2L85xcbJi39
 DOGE: D8eQgEX3B3TJYqFDgYQMj6RbfxvrhJEu5K 
 
 Mahalo!
--deusopus
+deusopus@gmail.com
