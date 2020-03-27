@@ -22,6 +22,7 @@ def guess_again():
       print("Wrong")
       print("Try again")
       x += 1
+  return
 guess_again()
 
 while True:
