@@ -8,6 +8,7 @@ def guess_again():
     i = int(input("Guess: "))
     if i == n:
       print("Correct")
+      print(f"The number was {n}")
       break
     if x == 2:
       print("Sorry")
