@@ -21,7 +21,7 @@ def guess_again():
 guess_again()
 
 while True:
-  restart = input("Press 'Enter' to play again. Enter 'exit' to quit")
+  restart = input("Press 'Enter' to play again. Enter 'exit' to quit: ")
   if restart.lower() != "exit":
     guess_again()
   else:
