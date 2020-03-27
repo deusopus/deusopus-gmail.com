@@ -1,5 +1,5 @@
 # 'Guess Again' by Brent K Kohler AKA deusopus
-score = 0
+
 def guess_again():
   import random
   n = random.randrange(1,6)
@@ -10,8 +10,6 @@ def guess_again():
     if i == n:
       print("You Win!")
       print(f"The number was {n}")
-      print(f"Your score: {score}")
-      score += 1
       break
     if x == 2:
       print("Sorry...")
@@ -32,3 +30,4 @@ while True:
   else:
     print("Thanks for playing!")
     break
+  
