@@ -1,7 +1,7 @@
 # 'Guess Again' by Brent K Kohler AKA deusopus
 def guess_again():
   import random
-  n = random.randrange(11)
+  n = random.randrange(1,10)
   x = 0
   print("Guess a number between 1 and 10")
   while True:
