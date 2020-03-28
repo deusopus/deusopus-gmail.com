@@ -20,7 +20,6 @@ def guess_again():
   global s
   n = random.randrange(1,6)
   t = 0
-  print(n)
   print("Guess a number between 1 and 5")
   while True:
     i = int(input("Guess: "))
