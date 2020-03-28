@@ -3,26 +3,25 @@ s = 0
 def guess_again(s):
   import random
   n = random.randrange(1,6)
-  t = 0
-  print('Guess a number between 1 and 5')
+  x = 0
+  print("Guess a number between 1 and 5")
   print(n)
   while True:
     i = int(input("Guess: "))
     if i == n:
-      print('You Win!')
-      print(f'The number was {n}')
+      print("Correct!")
+      print(f"The number was {n}")
       s += 1
-      print(f'Score: {s}')
+      print(f"Score: {s}")
       break
-    if t == 2:
-      print('Sorry...')
-      print('Game Over')
-      print(f'The number was {n}')
+    if x == 2:
+      print("Sorry...")
+      print("Game Over")
+      print(f"The number was {n}")
       break
     else:
-      print('Wrong')
-      print('Try again')
-      t += 1
+      print("Wrong")
+      x += 1
   return s
 guess_again(s)
 
@@ -32,5 +31,5 @@ while True:
   if x.lower() != 'exit':
     guess_again(s)
   else:
-    print('Thanks for playing!')
+    print("Thanks for playing!")
     break
