@@ -1,8 +1,8 @@
 # 'Guess Again' by Brent Kaimanu Kohler AKA deusopus
 s = 0
-def score(s):
+def score():
   print(f"Score: {s}")
-  return s
+  return
 def play_again():
   x = input("Press 'enter' to play again. Type 'exit' to quit: ")
   if x.lower() != "exit":
@@ -23,7 +23,7 @@ def guess_again():
       print("Correct!")
       print(f"The number was {n}")
       s += 1
-      score(s)
+      score()
       play_again()
     if t == 2:
       print("Sorry...")
