@@ -2,6 +2,10 @@
 s = 0
 def score():
   print(f"Score: {s}")
+  if s == 5:
+    print("You win!")
+    print("Thanks for playing")
+    quit()
   return
 def play_again():
   x = input("Press 'enter' to play again. Type 'exit' to quit: ")
@@ -16,6 +20,7 @@ def guess_again():
   global s
   n = random.randrange(1,6)
   t = 0
+  print(n)
   print("Guess a number between 1 and 5")
   while True:
     i = int(input("Guess: "))
@@ -29,6 +34,7 @@ def guess_again():
       print("Sorry...")
       print("Game Over")
       print(f"The number was {n}")
+      score()
       play_again()
     else:
       print("Wrong")
