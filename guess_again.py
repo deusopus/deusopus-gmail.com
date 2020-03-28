@@ -1,7 +1,4 @@
 # 'Guess Again' by Brent Kaimanu Kohler AKA deusopus
-#
-#             The score counter doesn't work, yet...
-
 s = 0
 def score(s):
   print(f"Score: {s}")
@@ -16,8 +13,8 @@ def play_again():
   return
 def guess_again():
   import random
+  global s
   n = random.randrange(1,6)
-  print(n)
   t = 0
   print("Guess a number between 1 and 5")
   while True:
@@ -25,6 +22,7 @@ def guess_again():
     if i == n:
       print("Correct!")
       print(f"The number was {n}")
+      s += 1
       score(s)
       play_again()
     if t == 2:
