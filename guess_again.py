@@ -34,6 +34,7 @@ def guess_again():
       print("Game Over")
       print(f"The number was {n}")
       score()
+      s = 0
       play_again()
     else:
       print("Wrong")
