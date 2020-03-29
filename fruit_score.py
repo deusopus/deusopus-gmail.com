@@ -20,7 +20,7 @@ def fruit_score():
       print(f"Score: {score}")
       print("Thanks for playing")
       break
-    if fruit.lower() in fruits:
+    if fruit.lower().strip() in fruits:
       print("Yes")
       score += 1
       print(f"Score: {score}")
