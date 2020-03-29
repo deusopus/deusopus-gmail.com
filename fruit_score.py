@@ -18,16 +18,21 @@ def fruit_score():
   instructions()
   score = 0
   fruits = ['apple', 'pear', 'banana', 'orange', 'lemon', 'lime', 'plum', 'grapes', 'kiwi', 'dragonfruit', 'cherries', 'grapefruit', 'guava', 'mango', 'papaya', 'pomegranate', 'blueberries', 'pineapple', 'strawberries', 'watermelon']
+  old_guesses = [] 
   while score >= 0:
-    fruit = input("Guess a fruit: ")
-    if fruit == "exit":
+    guess = input("Guess a fruit: ")
+    if guess == "exit":
       print(f"Score: {score}")
       print("Thanks for playing")
       break
     if fruit.lower().strip() in fruits:
-      print("Yes")
-      score += 1
-      print(f"Score: {score}")
+      if guess.lower().strip() not in old_guesses:
+        print("Yes")
+        old_guesses.append(guess)
+        score += 1
+        print(f"Score: {score}")
+      else:
+        print("You already guessed that")
     else:
       score -= 1
       print("Sorry")
