@@ -24,6 +24,9 @@ def instructions():
   print("Guess incorrectly and lose your points.")
   print("Earn 5 points and you win the game.")
   print("\n")
+  p = input("Would you like to play?: (y/n) ")
+  if p.lower().strip() == "n":
+    quit()
   return
 instructions()
 def guess_again():
