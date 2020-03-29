@@ -3,9 +3,11 @@ s = 0
 def score():
   print(f"Score: {s}")
   if s == 5:
+    print("Congratulations.")
     print("You win!")
-    print("Thanks for playing")
-    quit()
+    print("You have unlocked the secret...")
+    print("Goodbye")
+    quit()    
   return
 def play_again():
   x = input("Press 'enter' to play again. Type 'exit' to quit: ")
@@ -26,6 +28,7 @@ def instructions():
   print("\n")
   p = input("Would you like to play?: (y/n) ")
   if p.lower().strip() == "n":
+    print("Goodbye")
     quit()
   return
 instructions()
@@ -39,19 +42,22 @@ def guess_again():
     i = int(input("Guess: "))
     if i == n:
       print("Correct!")
-      print(f"The number was {n}")
+      print(f"The secret number was {n}")
       s += 1
       score()
       play_again()
+    elif i < n:
+      print("Your guess is too low")
+    elif i > n:
+      print("Your guess is too high")
     if t == 2:
       print("Sorry...")
       print("GAME OVER")
-      print(f"The number was {n}")
+      print(f"The secret number was {n}")
       score()
       s = 0
       play_again()
     else:
-      print("Wrong")
       print("Try again")
       t += 1
   return
