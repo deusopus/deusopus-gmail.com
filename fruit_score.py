@@ -4,15 +4,20 @@
 # If you lose all your points, "GAME OVER"
 # Enter "exit" at any time to quit
 
-print ("Welcome to 'Fruit Score' by deusopus")
-print ("Guess a fruit on my list and earn a point")
-print ("Guess incorrectly and lose a point")
-print ("'Game Over' when you lose all your points")
-print ("Type 'exit' at any time to quit")
-print ("Enjoy!")
+def instructions():
+  print("\n")
+  print ("Welcome to 'Fruit Score' by deusopus")
+  print ("Guess a fruit on my list and earn a point")
+  print ("Guess incorrectly and lose a point")
+  print ("'Game Over' when you lose all your points")
+  print ("Type 'exit' at any time to quit")
+  print ("\n")
+  return
 
 def fruit_score():
+  instructions()
   score = 0
+  print(f"Score: {score}")
   fruits = ['apple', 'pear', 'banana', 'orange', 'lemon', 'lime', 'plum', 'grapes', 'kiwi', 'dragonfruit', 'cherries', 'grapefruit', 'guava', 'mango', 'papaya', 'pomegranate', 'blueberries', 'pineapple', 'strawberries', 'watermelon']
   while score >= 0:
     fruit = input("Guess a fruit: ")
@@ -26,9 +31,9 @@ def fruit_score():
       print(f"Score: {score}")
     else:
       score -= 1
-      print("No")
+      print("Sorry")
       if score <= 0:
-        print("Game Over")
+        print("GAME OVER")
         break     
       else:
         print(f"Score: {score}")
