@@ -23,9 +23,10 @@ def fruit_score():
     guess = input("Guess a fruit: ")
     if guess == "exit":
       print(f"Score: {score}")
+      print("Goodbye")
       print("Thanks for playing")
       break
-    if fruit.lower().strip() in fruits:
+    if guess.lower().strip() in fruits:
       if guess.lower().strip() not in old_guesses:
         print("Yes")
         old_guesses.append(guess)
@@ -33,12 +34,14 @@ def fruit_score():
         print(f"Score: {score}")
       else:
         print("You already guessed that")
+        print(f"Score: {score}")
     else:
       score -= 1
       print("Sorry")
+      print(f"Score: {score}")
       if score <= 0:
+        print("You lost all your points")
         print("GAME OVER")
-        print(f"Score: {score}")
         break     
   return
 fruit_score()
