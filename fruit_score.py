@@ -15,10 +15,12 @@ def instructions():
   return
 
 def fruit_score():
-  instructions()
+  import random
   score = 0
-  fruits = ['apple', 'pear', 'banana', 'orange', 'lemon', 'lime', 'plum', 'grapes', 'kiwi', 'dragonfruit', 'cherries', 'grapefruit', 'guava', 'mango', 'papaya', 'pomegranate', 'blueberries', 'pineapple', 'strawberries', 'watermelon']
-  old_guesses = [] 
+  hint = 0
+  instructions()
+  fruit = ['apple', 'pear', 'banana', 'orange', 'lemon', 'lime', 'plum', 'grapes', 'kiwi', 'dragonfruit', 'cherries', 'grapefruit', 'guava', 'mango', 'papaya', 'pomegranate', 'blueberries', 'pineapple', 'strawberries', 'watermelon']
+  old_fruit = [] 
   while score >= 0:
     guess = input("Guess a fruit: ")
     if guess == "exit":
@@ -26,22 +28,31 @@ def fruit_score():
       print("Goodbye")
       print("Thanks for playing")
       break
-    if guess.lower().strip() in fruits:
-      if guess.lower().strip() not in old_guesses:
+    if guess.lower().strip() in fruit:
+      if guess.lower().strip() not in old_fruit:
         print("Yes")
-        old_guesses.append(guess)
+        old_fruit.append(guess)
+        fruit.remove(guess)
         score += 1
         print(f"Score: {score}")
-      else:
+    else:
+      if guess.lower().strip() in old_fruit:
         print("You already guessed that")
         print(f"Score: {score}")
-    else:
-      score -= 1
-      print("Sorry")
-      print(f"Score: {score}")
-      if score <= 0:
-        print("You lost all your points")
-        print("GAME OVER")
-        break     
+        hint += 1
+        if hint > 2:
+          h = len(fruit)
+          i = random.randrange(h)
+          print("Here's a hint")
+          hint = 0
+          print(fruit[i])
+      else:
+        score -= 1
+        print("Sorry")
+        print(f"Score: {score}")
+        if score <= 0:
+          print("You lost all your points")
+          print("GAME OVER")
+          break     
   return
 fruit_score()
