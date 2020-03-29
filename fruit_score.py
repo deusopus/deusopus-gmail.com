@@ -17,7 +17,6 @@ def instructions():
 def fruit_score():
   instructions()
   score = 0
-  print(f"Score: {score}")
   fruits = ['apple', 'pear', 'banana', 'orange', 'lemon', 'lime', 'plum', 'grapes', 'kiwi', 'dragonfruit', 'cherries', 'grapefruit', 'guava', 'mango', 'papaya', 'pomegranate', 'blueberries', 'pineapple', 'strawberries', 'watermelon']
   while score >= 0:
     fruit = input("Guess a fruit: ")
@@ -34,8 +33,7 @@ def fruit_score():
       print("Sorry")
       if score <= 0:
         print("GAME OVER")
-        break     
-      else:
         print(f"Score: {score}")
+        break     
   return
 fruit_score()
