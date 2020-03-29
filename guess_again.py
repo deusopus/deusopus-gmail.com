@@ -26,7 +26,7 @@ def instructions():
   print("Guess incorrectly and lose your points.")
   print("Earn 5 points and you win the game.")
   print("\n")
-  p = input("Would you like to play?: (y/n) ")
+  p = input("Would you like to play?: (Y/n) ")
   if p.lower().strip() == "n":
     print("Goodbye")
     quit()
