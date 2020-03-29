@@ -19,6 +19,7 @@ def fruit_score():
   score = 0
   hint = 0
   good = 0
+  awesome = 0
   instructions()
   fruit = ['cranberries','crab apples','cotton candy grapes','concord grapes','coconut','clementines','chokecherries','fig,sour','cranberries,fresh','wild blueberries,fresh','watermelon','water coconut','ugli fruit','tangerine','surinam cherry','sugar apple','strawberry papaya','strawberry guava','strawberries','star fruit','south african baby pineapple','soursop','sharon fruit','sapote','sapodilla','salmonberry','rose apple','red currants','red banana','raspberries','raisins','quince','pummelo','pomegranate','plum,dried','plum','plantain','pineapple','persimmon','persian melon','pear','peach','passion fruit','papaya','orange','nectarine','muscadine grapes','mulberries','mediterranean medlar','maradol papaya','mandarin orange','mangosteen','mango','mamey sapote','lychee','loquat','longan','loganberries','lime','lemon','kumquat','kiwifruit','kiwano','key lime','kaffir lime','jujube','jambolan','jackfruit','huckleberries','honeydew melon','honeycrisp apple','guava','grapes','grapefruit','grape juice','golden kiwifruit','galia melon','fig,dried','feijoa','elderberries','durian','date plum','dates','d’agen sugar plum','custard apple','crenshaw melon','cherries,dried','cherries','cherimoya','champagne grapes','casaba melon','carissa','caribbean june plum','cara cara navel orange','cape gooseberries','cantaloupe','canary melon','cactus pear','brown turkey fig','breadfruit','boysenberries','blueberries','blood orange','blackberries','black currants','black crowberry','barbados cherry','banana','avocado','asian pears','armenian cucumber','apricots','apple']
   old_fruit = [] 
@@ -36,9 +37,13 @@ def fruit_score():
         fruit.remove(guess)
         score += 1
         good += 1
+        awesome += 1
         if good == 3:
           print("Good job!")
           good = 0
+        if awesome == 5:
+          print("Awesome!")
+          awesome = 0
         print(f"Score: {score}")
     else:
       if guess.lower().strip() in old_fruit:
@@ -49,8 +54,8 @@ def fruit_score():
           h = len(fruit)
           i = random.randrange(h)
           print("Here's a hint")
-          hint = 0
           print(fruit[i])
+          hint = 0
       else:
         score -= 1
         print("Sorry")
