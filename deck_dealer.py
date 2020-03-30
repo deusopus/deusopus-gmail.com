@@ -18,19 +18,19 @@ def deck_dealer():
     print("Queen")
   elif n1 == 13:
     print("King")
-   elif n1 == 14:
+  elif n1 == 14:
     print("'7'")
-   elif n1 == 15:
+  elif n1 == 15:
     print("77")
-   elif n1 == 16:
+  elif n1 == 16:
     print("777")
-   elif n1 == 19:
+  elif n1 == 19:
     print("Bar")
-   elif n1 == 20:
+  elif n1 == 20:
     print("Double Bar")
-   elif n1 == 21:
+  elif n1 == 21:
     print("Triple Bar")
-   elif n1 == 22:
+  elif n1 == 22:
     print("Wild")
   else:
     print(n1)
