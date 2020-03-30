@@ -1,5 +1,30 @@
 # 'Deck Dealer' by Brent Kaimanu Kohler AKA deusopus
-def deck_dealer():
+def welcome():
+  print ("Welcome to The Grass Shack Casino")
+  x = input(str("Would you like to try your luck?: (Y/n) "))
+  if x == "n":
+    y = input(str("Are you sure?: (Y/n) "))
+    if y == "n":
+      spin()
+  else:
+    spin()  
+  return
+def spin():
+  t = input(str("Press 'enter' to spin. Type 'exit' to quit.: "))
+  if t == "exit":
+    print("You'll be back...")
+    print("Bwahahahahahahah!")
+    quit()
+  else:
+    loop()
+  return
+def loop():
+  for i in range (5):
+    deck_dealer()
+  if i == 4:  
+    spin()
+  return
+def deck_dealer():     
   import random
   n1 = random.randrange(1,23)
   if n1 == 1:
@@ -47,8 +72,4 @@ def deck_dealer():
   else:
     print(n1)
   return
-deck_dealer()
-deck_dealer()
-deck_dealer()
-deck_dealer()
-deck_dealer()
+welcome()
