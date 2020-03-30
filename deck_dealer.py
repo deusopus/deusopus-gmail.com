@@ -13,7 +13,7 @@ def spin():
   t = input(str("Press 'enter' to spin. Type 'exit' to quit.: "))
   if t == "exit":
     print("You'll be back...")
-    print("Bwahahahahahahah!")
+    print("Bwahahahahahaha!")
     quit()
   else:
     loop()
