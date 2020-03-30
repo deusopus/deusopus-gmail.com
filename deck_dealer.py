@@ -9,9 +9,17 @@ def deck_dealer():
   elif n1 == 3:
     print("Cherry")
   elif n1 == 4:
-    print("Plum")
+    print("Orange")
   elif n1 == 5:
+    print("Lemon")
+  elif n1 == 6:
+    print("Grape")
+  elif n1 == 7:
+    print("Plum")
+  elif n1 == 8:
     print("Bell")
+  elif n1 == 9:
+    print("Double Bell")
   elif n1 == 11:
     print("Jack")
   elif n1 == 12:
@@ -19,19 +27,23 @@ def deck_dealer():
   elif n1 == 13:
     print("King")
   elif n1 == 14:
-    print("'7'")
+    print("7")
   elif n1 == 15:
     print("77")
   elif n1 == 16:
     print("777")
-  elif n1 == 19:
+  elif n1 == 17:
     print("Bar")
-  elif n1 == 20:
+  elif n1 == 18:
     print("Double Bar")
-  elif n1 == 21:
+  elif n1 == 19:
     print("Triple Bar")
+  elif n1 == 20:
+    print("Cherry")
+  elif n1 == 21:
+    print("Plum")
   elif n1 == 22:
-    print("Wild")
+    print("wild")
   else:
     print(n1)
   return
