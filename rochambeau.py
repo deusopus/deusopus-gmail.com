@@ -24,7 +24,7 @@ def score():
         if c == 0:
           c += 1
           x = str(input("Would you like to go for 3 out of 5?: (y/n)"))
-          if x == "n":
+          if x.lower().strip() == "n":
             print("Better luck next time")
             print("Goodbye")
             quit()
