@@ -39,9 +39,9 @@ def deck_dealer():
   elif n1 == 19:
     print("Triple Bar")
   elif n1 == 20:
-    print("Cherry")
+    print("Wild")
   elif n1 == 21:
-    print("Plum")
+    print("Wild")
   elif n1 == 22:
     print("wild")
   else:
