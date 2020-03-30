@@ -58,11 +58,11 @@ def fruit_score():
           hint = 0
       else:
         score -= 1
-        print("Sorry")
+        print("Sorry...")
         print(f"Score: {score}")
         if score <= 0:
-          print("You lost all your points")
-          print("GAME OVER")
+          print("You lose")
+          print("Game Over")
           break     
   return
 fruit_score()
