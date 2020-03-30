@@ -54,6 +54,7 @@ def rochambeau():
   global c
   import random
   choices = ['rock', 'paper', 'scissors']
+  score()
   while True:
     c_c = random.choice(choices)
     print ("Rock, Paper, Scissors")
