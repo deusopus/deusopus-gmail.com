@@ -3,20 +3,49 @@
 t = 0
 w = 0
 l = 0
+c = 0
 def score():
   print(f"Turns: {t}")
   print(f"Wins: {w}")
   print(f"Losses: {l}")
+  if t == 2:
+    if w == 2:
+      print("You proved it!")
+      print("You get dibs")
+      quit()
+  if t == 2:
+    if w == 0:
+      if l == 2:
+        print("Sorry...")
+        print("You lose")
+        quit()
+  if t == 3:
+    if w == 1:
+      if l == 2:
+        if c == 0:
+          c += 1
+          x = str(input("Would you like to go for 3 out of 5?: (y/n)"))
+          if x == "n":
+            print("Better luck next time")
+            print("Goodbye")
+            quit()
+  if t == 5:
+    if w == 3:
+      if l == 2:
+        print("You proved it!")
+        print("You get dibs")
+        quit()
   return
 def rochambeau():
   global t
   global w
   global l
+  global c
   import random
   choices = ['rock', 'paper', 'scissors']
   while True:
-    print("Rock, Paper, or Scissors?")
-    p_c = str(input("Make your choice: "))
+    print ("Rock, Paper, Scissors")
+    p_c = str(input("Go: "))
     if p_c == exit:
       quit()
     c_c = random.choice(choices)
