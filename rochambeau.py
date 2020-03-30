@@ -21,13 +21,18 @@ def score():
   if t == 3:
     if w == 1:
       if l == 2:
-        if c == 0:
-          c += 1
+        if c < 1:
           x = str(input("Would you like to go for 3 out of 5?: (y/n)"))
           if x.lower().strip() == "n":
             print("Better luck next time")
             print("Goodbye")
             quit()
+  if t == 5:
+    if w <= 2:
+      if l >= 3:
+        print("Sorry...")
+        print("You lose")
+        quit()           
   if t == 5:
     if w == 3:
       if l == 2:
@@ -35,7 +40,14 @@ def score():
         print("You get dibs")
         quit()
   return
+def instructions():
+  print("Welcome to 'Rochambeau' by deusopus")
+  print("The age-old game of Rock, Paper, Scissors")
+  print("Type 'exit' at any time to quit")
+  print("Have fun!")
+  return
 def rochambeau():
+  instructions()
   global t
   global w
   global l
@@ -43,12 +55,13 @@ def rochambeau():
   import random
   choices = ['rock', 'paper', 'scissors']
   while True:
+    c_c = random.choice(choices)
+    print(c_c)
     print ("Rock, Paper, Scissors")
     p_c = str(input("Go: "))
-    if p_c == exit:
+    if p_c.lower().strip() == "exit":
       quit()
-    c_c = random.choice(choices)
-    print (c_c.title())
+    print ("I choose", c_c.title())
     if p_c.lower().strip() == "rock":
       if c_c == "rock":
         print("Draw")
