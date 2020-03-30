@@ -1,5 +1,4 @@
 # 'Rochambeau' by Brent K Kohler AKA deusopus
-# UNDER CONSTRUCTION
 t = 0
 w = 0
 l = 0
