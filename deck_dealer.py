@@ -2,16 +2,16 @@
 def welcome():
   print ("Welcome to The Grass Shack Casino")
   x = input(str("Would you like to try your luck?: (Y/n) "))
-  if x == "n":
+  if x.lower().strip() == "n":
     y = input(str("Are you sure?: (Y/n) "))
-    if y == "n":
+    if y.lower().strip() == "n":
       spin()
   else:
     spin()  
   return
 def spin():
   t = input(str("Press 'enter' to spin. Type 'exit' to quit.: "))
-  if t == "exit":
+  if t.lower().strip() == "exit":
     print("You'll be back...")
     print("Bwahahahahahaha!")
     quit()
