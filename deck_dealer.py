@@ -43,7 +43,7 @@ def deck_dealer():
   elif n1 == 21:
     print("Wild")
   elif n1 == 22:
-    print("wild")
+    print("Wild")
   else:
     print(n1)
   return
