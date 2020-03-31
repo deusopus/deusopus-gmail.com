@@ -51,15 +51,20 @@ def fruit_score():
         print(f"Score: {score}")
         hint += 1
         if hint == 2:
-          h = len(fruit)
-          i = random.randrange(h)
+          i = random.choice(fruit)
           print("Here's a hint")
-          print (fruit[i].title())
+          print (i.title())
           hint = 0
       else:
         score -= 1
-        print("Sorry")
-        print(f"Score: {score}")
+        if score < 0:
+          print("Sorry")
+          print("Score: 0")
+          print("Game Over")
+          quit()
+        else:
+          print("Sorry")
+          print(f"Score: {score}")
         if score <= 0:
           print("You lost all your points")
           print("Game Over")
