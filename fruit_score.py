@@ -62,6 +62,7 @@ def fruit_score():
         a = 0
     if guess.lower().strip() not in fruit:
       if guess.lower().strip() not in old_fruit:
+        print("Sorry")
         s -= 1
         if s <= 0:
           print("Score: 0")
