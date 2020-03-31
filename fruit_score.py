@@ -65,7 +65,8 @@ def fruit_score():
         print("Sorry")
         s -= 1
         if s <= 0:
-          print("Score: 0")
+          s = 0
+          print(f"Score: {s}")
           print("Game Over")
           break
         else:
