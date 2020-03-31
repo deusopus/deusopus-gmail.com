@@ -2,7 +2,19 @@
 t = 0
 w = 0
 l = 0
-c = 0
+
+def play_again():
+  t = 0
+  w = 0
+  l = 0
+  y = input("Would you like to play again?: (Y/n)")
+  if y.lower().strip() == "n":
+    print("See you next time")
+    print("Goodbye")
+    quit()
+  else:
+    rochambeau()
+  return
 def score():
   print(f"Turns: {t}")
   print(f"Wins: {w}")
@@ -10,69 +22,83 @@ def score():
   if t == 2:
     if w == 2:
       print("You win!")
-      print("Goodbye")
-      quit()
+      print("Game Over")
+      play_again()
+  if t== 2:
+    if w == 1:
+      if l == 1:
+        print("Here's the tie-breaker...")
   if t == 2:
     if w == 0:
       if l == 2:
         print("Sorry...")
-        print("You lose")
-        quit()
+        print("Game Over")
+        play_again()
   if t == 3:
     if w == 2:
       if l == 1:
         print("You win!")
         print("Goodbye")
-        quit()   
+        play_again()
   if t == 3:
     if w == 1:
       if l == 2:
-        if c < 1:
           x = input("Try for best 3 out of 5?: (Y/n)")
           if x.lower().strip() == "n":
-            print("Better luck next time")
-            print("Goodbye")
+            print("Thanks for trying")
+            print("Game Over")
             quit()
   if t == 4:
     if w == 1:
-      print("Sorry...")
-      print("You lose")
-      quit()
-  if t == 5:
-    if w <= 2:
-      if l >= 3:
+      if l == 3:
         print("Sorry...")
-        print("You lose")
-        quit()           
+        print("Game Over")
+        play_again()
+  if t == 4:
+    if w == 2:
+      if l == 2:
+        print("Here's the tie-breaker!")
+  if t == 5:
+    if w == 2:
+      if l == 3:
+        print("Sorry...")
+        print("Game Over")
+        play_again()     
   if t == 5:
     if w == 3:
       if l == 2:
         print("You win!")
-        print("Goodbye")
-        quit()
+        print("Game Over")
+        play_again()
   return
 def instructions():
+  print("\n")
   print("Welcome to 'Rochambeau' by deusopus")
   print("The age-old game of Rock, Paper, Scissors")
   print("Type 'exit' at any time to quit")
   print("Have fun!")
+  print("\n")
   return
 def rochambeau():
-  instructions()
-  score()
   global t
   global w
   global l
-  global c
+  instructions()
+  score()
   import random
   choices = ['rock', 'paper', 'scissors']
   while True:
     c_c = random.choice(choices)
+    print(c_c)
+    print ("\n")
     print ("Rock, Paper, Scissors")
-    p_c = input("Go: ")
+    p_c = input("Go!: ")
     if p_c.lower().strip() == "exit":
+      print("Thanks for playing")
+      print("Goodbye")
       quit()
     print ("I choose", c_c.title())
+    print ("\n")
     if p_c.lower().strip() == "rock":
       if c_c == "rock":
         print("Draw")
@@ -121,5 +147,4 @@ def rochambeau():
           if p_c.lower().strip() != "scissors":
             print("Invalid choice")
             print("Try again")
-    
 rochambeau()
