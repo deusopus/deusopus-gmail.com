@@ -18,6 +18,9 @@ def play_again():
     rochambeau()
   return
 def score():
+  global t
+  global w
+  global l
   print(f"Turns: {t}")
   print(f"Wins: {w}")
   print(f"Losses: {l}")
@@ -91,7 +94,6 @@ def rochambeau():
   choices = ['rock', 'paper', 'scissors']
   while True:
     c_c = random.choice(choices)
-    print(c_c)
     print ("\n")
     print ("Rock, Paper, Scissors")
     p_c = input("Go!: ")
