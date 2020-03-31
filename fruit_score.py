@@ -25,7 +25,7 @@ def fruit_score():
   old_fruit = [] 
   while score >= 0:
     guess = input("Guess a fruit: ")
-    if guess == "exit":
+    if guess.lower().strip() == "exit":
       print(f"Score: {score}")
       print("Goodbye")
       print("Thanks for playing")
@@ -54,14 +54,14 @@ def fruit_score():
           h = len(fruit)
           i = random.randrange(h)
           print("Here's a hint")
-          print(fruit[i])
+          print(fruit.title()[i])
           hint = 0
       else:
         score -= 1
-        print("Sorry...")
+        print("Sorry")
         print(f"Score: {score}")
         if score <= 0:
-          print("You lose")
+          print("You lost all your points")
           print("Game Over")
           break     
   return
