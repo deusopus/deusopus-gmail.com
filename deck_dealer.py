@@ -7,7 +7,7 @@ def welcome():
     if y.lower().strip() == "n":
       spin()
     else:
-      print("See you next time")
+      print("You'll be back...")
       print("Goodbye")
   else:
     spin()  
@@ -16,7 +16,7 @@ def spin():
   t = input(str("Press 'enter' to spin. Type 'exit' to quit.: "))
   if t.lower().strip() == "exit":
     print("You'll be back...")
-    print("Bwahahahahahahaha!")
+    print("Bwahahahahahaha!")
     quit()
   else:
     loop()
