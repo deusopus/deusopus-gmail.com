@@ -68,7 +68,6 @@ def rochambeau():
   choices = ['rock', 'paper', 'scissors']
   while True:
     c_c = random.choice(choices)
-    print(c_c)
     print ("Rock, Paper, Scissors")
     p_c = input("Go: ")
     if p_c.lower().strip() == "exit":
