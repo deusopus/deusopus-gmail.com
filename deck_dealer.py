@@ -7,7 +7,7 @@ def welcome():
     if y.lower().strip() == "n":
       spin()
     else:
-      print("You'll be back...")
+      print("See you next time")
       print("Goodbye")
   else:
     spin()  
