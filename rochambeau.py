@@ -2,17 +2,19 @@
 t = 0
 w = 0
 l = 0
-
 def play_again():
-  t = 0
-  w = 0
-  l = 0
+  global t
+  global w
+  global l
   y = input("Would you like to play again?: (Y/n)")
   if y.lower().strip() == "n":
     print("See you next time")
     print("Goodbye")
     quit()
   else:
+    t = 0
+    w = 0
+    l = 0
     rochambeau()
   return
 def score():
