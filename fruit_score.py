@@ -54,7 +54,7 @@ def fruit_score():
           h = len(fruit)
           i = random.randrange(h)
           print("Here's a hint")
-          print(fruit.title()[i])
+          print (fruit[i].title())
           hint = 0
       else:
         score -= 1
