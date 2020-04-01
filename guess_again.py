@@ -1,7 +1,5 @@
 # 'Guess Again' by Brent Kaimanu Kohler AKA deusopus
-turns = 0
-score = 0
-n1 = 0
+score,turns,round = 0,0,1
 def instructions():
   print("\n")
   print("I am The Great Enigma!")
@@ -18,11 +16,12 @@ def instructions():
     print("Goodbye")
     quit()
   return
-def guess_again(score,turns,n1):
+def guess_again(score,turns,round):
   import random
   n1 = random.randrange(1,6)
   while True:
-    score_keeper(score,turns,n1)
+    print(f"Round: {round}")
+    score_keeper(score,turns,round)
     n = input("Guess: ")
     if n.lower().strip() == "exit":
       print("Thanks for playing!")
@@ -32,16 +31,17 @@ def guess_again(score,turns,n1):
       print("Correct!")
       print(f"The secret number was {n1}")
       score += 1
+      round += 1
       turns = 0  
+      guess_again(score,turns,round)
     if int(n) < n1:
       print("Your guess is too low")
       turns += 1
       if turns > 2:
         print("Sorry...")
         print("Game Over")
-        print(f"The secret number was {n1}") 
-        turns = 0
-        play_again(score,turns,n1)
+        print(f"The secret number was {n1}")
+        play_again(score,turns,round)
     if int(n) > n1:
       print("Your guess is too high")
       turns += 1
@@ -49,25 +49,25 @@ def guess_again(score,turns,n1):
         print("Sorry...")
         print("Game Over")
         print(f"The secret number was {n1}")
-        turns = 0 
-        play_again(score,turns,n1)
-  return (score,turns,n1)  
-def score_keeper(score,turns,n1):
+        play_again(score,turns,round)
+  return score,turns,round 
+def score_keeper(score,turns,round):
   print(f"Score: {score}")
   if score == 5:
-    print("Congratulations")
-    print("You win!")
+    print("Congratulations!")
+    print("You win")
     print("You have unlocked the secret...")
     print("Goodbye")
-    quit()    
-  return score,turns,n1
-def play_again(score,turns,n1):
+    play_again(score,turns,round)
+  return score,turns,round
+def play_again(score,turns,round):
   x = input("Press 'enter' to play again. Type 'exit' to quit: ")
   if x.lower().strip() == "exit":
     print("Thanks for playing")
     quit()
   else: 
-    guess_again(score,turns,n1)
-  return score,turns,n1
+    score,turns,round = 0,0,1
+    guess_again(score,turns,round)
+  return score,turns,round
 instructions()
-guess_again(score,turns,n1)
+guess_again(score,turns,round)
