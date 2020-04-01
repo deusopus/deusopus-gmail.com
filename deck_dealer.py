@@ -17,21 +17,24 @@ def spin():
   t = input(str("Press 'enter' to spin. Type 'exit' to quit.: "))
   if t.lower().strip() == "exit":
     print("You'll be back...")
-    print("Bwahahahahahaha!")
+    print("Bwahahaha!")
     quit()
   else:
-    loop()
-  return
-def loop():
-  for i in range (5):
     deck_dealer()
-  if i == 4:  
-    spin()
   return
 def deck_dealer():     
   import random
-  slots = ['Ace','Deuce','Cherry','Orange','Lemon','Grape','Plum','Bell','Double Bell','Triple Bell','10','Jack','Queen','King','7','77','777','Bar','Double Bar','Triple Bar','Wild','Wild','Wild','Jackpot']
+  slots = ['Ace','Deuce','Cherry','Orange','Lemon','Grape','Plum','Bell','Double Bell','Triple Bell','10','Jack','Queen','King','7','77','777','Bar','Double Bar','Triple Bar','Wild','Wild','Wild','Jackpot','Jackpot','Jackpot']
   n1 = random.choice(slots)
+  n2 = random.choice(slots)
+  n3 = random.choice(slots)
+  n4 = random.choice(slots)
+  n5 = random.choice(slots)
   print(n1)
+  print(n2)
+  print(n3)
+  print(n4)
+  print(n5)
+  spin()
   return
 welcome()
