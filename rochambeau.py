@@ -1,7 +1,5 @@
 # 'Rochambeau' by Brent K Kohler AKA deusopus
-t = 0
-w = 0
-l = 0
+t,w,l = 0,0,0
 def play_again(t,w,l):
   y = input("Would you like to play again?: (Y/n)")
   if y.lower().strip() == "n":
