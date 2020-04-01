@@ -3,10 +3,7 @@
 # Guess incorrectly and lose a point
 # If you lose all your points, "GAME OVER"
 # Enter "exit" at any time to quit
-score = 0
-g = 0
-a = 0
-h = 0
+score,g,a,h = 0,0,0,0
 def instructions():
   print("\n")
   print ("Welcome to 'Fruit Score' by deusopus")
