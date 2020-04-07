@@ -1,6 +1,6 @@
 # 'Rochambeau' by Brent K Kohler AKA deusopus
 t,w,l,c = 0,0,0,0
-def play_again(t,w,l):
+def play_again(t,w,l,c):
   y = input("Would you like to play again?: (Y/n)")
   if y.lower().strip() == "n":
     print("See you next time")
