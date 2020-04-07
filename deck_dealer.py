@@ -1,4 +1,5 @@
 # 'Deck Dealer' by Brent Kaimanu Kohler AKA deusopus
+
 def welcome():
   print("\n")
   print ("Welcome to The Grass Shack Casino"+"\U0001F340")
@@ -24,17 +25,24 @@ def spin():
   return
 def deck_dealer():     
   import random
+  import time
   slots = ['Ace','Deuce','Cherry','Orange','Lemon','Grape','Plum','Bell','Double Bell','Triple Bell','10','Jack','Queen','King','7','77','777','Bar','Double Bar','Triple Bar','Wild','Wild','Wild','Jackpot','Jackpot','Jackpot']
   n1 = random.choice(slots)
   n2 = random.choice(slots)
   n3 = random.choice(slots)
   n4 = random.choice(slots)
   n5 = random.choice(slots)
+  time.sleep(.3)
   print(n1)
+  time.sleep(.3)
   print(n2)
+  time.sleep(.3)
   print(n3)
+  time.sleep(.3)
   print(n4)
+  time.sleep(.3)
   print(n5)
+  time.sleep(.3)
   spin()
   return
 welcome()
