@@ -1,7 +1,7 @@
 # 'Deck Dealer' by Brent Kaimanu Kohler AKA deusopus
 def welcome():
   print("\n")
-  print ("Welcome to The Grass Shack Casino")
+  print ("Welcome to The Grass Shack Casino"+"\U0001F340")
   x = input(str("Would you like to try your luck?: (Y/n) "))
   if x.lower().strip() == "n":
     y = input(str("Are you sure?: (Y/n) "))
