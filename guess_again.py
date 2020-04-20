@@ -15,31 +15,40 @@ def instructions():
     print("See you next time")
     print("Game Over")
     quit()
+  else:
+    print("Let us begin...")
   return
 def guess_again(score,turns,round):
   import time
   import random
   n1 = random.randrange(1,6)
   while True:
-    print(f"Round: {round}")
     score_keeper(score,turns,round)
     n = input("Guess: ")
     if n.lower().strip() == "exit":
-      print("Thanks for playing!")
+      print("Game Over")
       print("Goodbye")
-      break
+      quit()
     if int(n) == n1:
       print("Correct!")
-      time.sleep(2)
+      score += 1
+      time.sleep(1)
       print(f"The secret number was {n1}")
       time.sleep(1)
-      score += 1
+      if score == 5:
+        score_keeper(score,turns,round)
+      print("You're learning my secrets...")
+      time.sleep(1)
+      print("You won't guess again!")
+      time.sleep(1)
       round += 1
       turns = 0  
       guess_again(score,turns,round)
     if int(n) < n1:
       print("Your guess is too low")
-      time.sleep(2)
+      time.sleep(1)
+      print("Guess again...")
+      time.sleep(1)
       turns += 1
       if turns > 2:
         print("Sorry...")
@@ -49,7 +58,9 @@ def guess_again(score,turns,round):
         play_again(score,turns,round)
     if int(n) > n1:
       print("Your guess is too high")
-      time.sleep(2)
+      time.sleep(1)
+      print("Guess again...")
+      time.sleep(1)
       turns += 1
       if turns > 2:
         print("Sorry...")
@@ -59,6 +70,7 @@ def guess_again(score,turns,round):
         play_again(score,turns,round)
   return score,turns,round 
 def score_keeper(score,turns,round):
+  print(f"Round: {round}")
   print(f"Score: {score}")
   if score == 5:
     print("Congratulations!")
@@ -70,7 +82,7 @@ def score_keeper(score,turns,round):
 def play_again(score,turns,round):
   x = input("Press 'enter' to play again. Type 'exit' to quit: ")
   if x.lower().strip() == "exit":
-    print("Thanks for playing")
+    print("Game Over")
     quit()
   else: 
     score,turns,round = 0,0,1
