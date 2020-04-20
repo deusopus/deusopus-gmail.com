@@ -17,6 +17,7 @@ def instructions():
     quit()
   return
 def guess_again(score,turns,round):
+  import time
   import random
   n1 = random.randrange(1,6)
   while True:
@@ -29,26 +30,32 @@ def guess_again(score,turns,round):
       break
     if int(n) == n1:
       print("Correct!")
+      time.sleep(2)
       print(f"The secret number was {n1}")
+      time.sleep(1)
       score += 1
       round += 1
       turns = 0  
       guess_again(score,turns,round)
     if int(n) < n1:
       print("Your guess is too low")
+      time.sleep(2)
       turns += 1
       if turns > 2:
         print("Sorry...")
         print("Game Over")
         print(f"The secret number was {n1}")
+        time.sleep(1)
         play_again(score,turns,round)
     if int(n) > n1:
       print("Your guess is too high")
+      time.sleep(2)
       turns += 1
       if turns > 2:
         print("Sorry...")
         print("Game Over")
         print(f"The secret number was {n1}")
+        time.sleep(1)
         play_again(score,turns,round)
   return score,turns,round 
 def score_keeper(score,turns,round):
@@ -57,7 +64,7 @@ def score_keeper(score,turns,round):
     print("Congratulations!")
     print("You win")
     print("You have unlocked the secret...")
-    print("Goodbye")
+    print("Game Over")
     play_again(score,turns,round)
   return score,turns,round
 def play_again(score,turns,round):
