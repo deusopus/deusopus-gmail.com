@@ -12,8 +12,8 @@ def instructions():
   print("\n")
   p = input("Would you like to play?: (Y/n) ")
   if p.lower().strip() == "n":
-    print("Thanks anyway")
-    print("Goodbye")
+    print("See you next time")
+    print("Game Over")
     quit()
   return
 def guess_again(score,turns,round):
