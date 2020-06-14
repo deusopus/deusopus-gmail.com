@@ -48,6 +48,7 @@ zelda_0 = {'x_pos': x/2, 'y_pos': y/2}
 def movement():
 
   print("It is dark")
+  print("You hear trickling water")
   print("You hear the faint rattling of chains")
   print()
   print (f"You are at coordinate: X:{zelda_0['x_pos']}, Y:{zelda_0['y_pos']}")
