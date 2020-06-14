@@ -31,7 +31,6 @@ class Dungeon():
       print(f"You have the head of a {(self.enemy)}")
     else:
       print(f"You have a small amount of pocket fluff")
-
     return self
 
 map1 = Dungeon(x, y, 'bronze sword', 'gold', 'giant fire ant')
@@ -48,12 +47,12 @@ zelda_0 = {'x_pos': x/2, 'y_pos': y/2}
 def movement():
 
   print("It is dark")
-  print("You hear trickling water")
+  print("You hear the trickling of water")
   print("You hear the faint rattling of chains")
   print()
   print (f"You are at coordinate: X:{zelda_0['x_pos']}, Y:{zelda_0['y_pos']}")
 
-  turn = input('Which direction will you head? (n, s, e, w, l, i, q)')
+  turn = input('What is your move? (n, s, e, w, l, i, q)')
 
   x_increment = 0
   y_increment = 0
@@ -79,7 +78,6 @@ def movement():
   zelda_0['y_pos'] = zelda_0['y_pos'] + y_increment
 
   turnbase()
-
   return
   
 def turnbase():
@@ -100,8 +98,7 @@ def turnbase():
     print('You are at the wall')
     zelda_0['x_pos'] = x-x
   else:
-    print()
-    
+    print()  
   return
 
 def look():
