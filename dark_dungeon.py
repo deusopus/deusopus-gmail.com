@@ -12,6 +12,7 @@ class Dungeon():
     self.enemy = enemy
   
   def map(self):
+    print()
     print (f"You are in a dark dungeon and it smells of death")
     print(f"The walls are damp and spotted with lichen")
     print (f"It is {(str(self.length))} yards long and {(str(self.width))} yards wide")
@@ -45,8 +46,7 @@ board.map()
 zelda_0 = {'x_pos': x/2, 'y_pos': y/2}
 
 def movement():
- 
-  print()
+
   print("It is dark")
   print("You hear the faint rattling of chains")
   print()
