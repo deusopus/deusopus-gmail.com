@@ -13,7 +13,7 @@ class Dungeon():
   
   def map(self):
     print()
-    print (f"You are in a dark dungeon and it smells of death")
+    print(f"You are in a dark dungeon and it smells of death")
     print(f"The walls are damp and spotted with lichen")
     print (f"It is {(str(self.length))} yards long and {(str(self.width))} yards wide")
     print (f"You have with you as a weapon, a trusty {(self.weapon)}")
