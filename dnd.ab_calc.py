@@ -10,5 +10,5 @@ for rolla in range(len(abils)):
   print(f"Roll {rolla+1}")
   print(d6a)
   total = sum(d6a)
-  print(f"{abs[rolla]}: {total}/18")
+  print(f"{abils[rolla]}: {total}/18")
   d6a = []
