@@ -11,5 +11,4 @@ for roll in range(6):
   d6a.remove(min(d6a))
   d6b.append(d6a)
   print(d6b)
-  d6c.append(d6b)
   d6a = []
