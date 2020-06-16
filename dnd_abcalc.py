@@ -2,6 +2,7 @@
 import random
 d6a = []
 d6b = []
+d6c = []
 for roll in range(6):
   for roll in range(4):
     d6 = random.randrange(1,7)
