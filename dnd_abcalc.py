@@ -8,8 +8,8 @@ for rolla in range(len(abils)):
     d6 = random.randrange(1,7)
     d6a.append(d6)  
   d6a.remove(min(d6a))
-  print(f"Roll {rolla+1}")
+  print(f'Roll {rolla+1}')
   print(d6a)
   total = sum(d6a)
-  print(f"{abils[rolla]}: {total}/18")
+  print(f'{abils[rolla]}: {total}/18')
   d6a = []
