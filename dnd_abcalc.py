@@ -20,4 +20,4 @@ for rolla in range(len(traits)):
   drawer[traits[rolla]] = d6a
   d6a = []
 for key,value in drawer.items():
-  print(f'{key:15}{value}{sum(value):5}')
+  print(f'{key:15}{value}{sum(value):5}/18')
