@@ -1,9 +1,10 @@
 #Authentic D&D Ability Calculator by deusopus
-print("Authentic D&D Ability Calculator by deusopus")
+print('Authentic D&D Ability Calculator by deusopus')
 import random
 d6a = []
-abils = ['Strength', 'Dexterity', 'Constitution', 'Intelligence', 'Wisdom', 'Charisma']
-for rolla in range(len(abils)):
+traits = ['Strength', 'Dexterity', 'Constitution', 'Intelligence', 'Wisdom', 
+         'Charisma']
+for rolla in range(len(traits)):
   for rollb in range(4):
     d6 = random.randrange(1,7)
     d6a.append(d6)  
@@ -11,5 +12,5 @@ for rolla in range(len(abils)):
   print(f'Roll {rolla+1}')
   print(d6a)
   total = sum(d6a)
-  print(f'{abils[rolla]}: {total}/18')
+  print(f'{traits[rolla]}: {total}/18')
   d6a = []
