@@ -36,21 +36,28 @@ class Dungeon():
 map1 = Dungeon(x, y, 'bronze sword', 'gold', 'giant fire ant')
 map2 = Dungeon(x, y, 'axe', 'jewels', 'man-bear-pig')
 map3 = Dungeon(x, y, 'crossbow', 'silver coins', 'disproportionate dwarf')
+map4 = Dungeon(x, y, 'iphone', 'bitcoin', 'black hat hacker')
 
-scenes = [map1, map2, map3]
+scenes = [map1, map2, map3, map4]
 board = random.choice(scenes)
 board.map()
 
 #initial location
 zelda_0 = {'x_pos': x/2, 'y_pos': y/2}
 
-def movement():
-
+def intro():
+  print()
   print("It is dark")
   print("You hear the trickling of water")
   print("You hear the faint rattling of chains")
+  print("Someone is screaming")
   print()
   print (f"You are at coordinate: X:{zelda_0['x_pos']}, Y:{zelda_0['y_pos']}")
+ 
+  return
+         
+def movement():
+  intro()
 
   turn = input('What is your move? (n, s, e, w, l, i, q)')
 
@@ -109,6 +116,6 @@ def look():
 treasure = 0
 enemy = 0
 turn = 0
-
+         
 while True:  
   movement()
