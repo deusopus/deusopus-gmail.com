@@ -17,7 +17,7 @@ for rolla in range(len(traits)):
   total = sum(d6a)
   print(f'{traits[rolla]}: {total}/18')
   print()   
-  drawer[rolla] = d6a
+  drawer[traits[rolla]] = d6a
   d6a = []
 for key,value in drawer.items():
-  print(key, ":", value) 
+  print(key, ":", value)  
