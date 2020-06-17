@@ -8,9 +8,10 @@ for rolla in range(len(traits)):
   for rollb in range(4):
     d6 = random.randrange(1,7)
     d6a.append(d6)  
+  low = (min(d6a))
   d6a.remove(min(d6a))
   print(f'Roll {rolla+1}')
-  print(d6a)
+  print(f'{d6a} Low:{low}')
   total = sum(d6a)
   print(f'{traits[rolla]}: {total}/18')
   d6a = []
