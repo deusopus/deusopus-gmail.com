@@ -1,5 +1,5 @@
 #Authentic D&D Ability Calculator by deusopus
-#shows total of each individual roll as well as the low roll
+#shows each roll and the total of each roll as well as the low roll
 import random
 d6a = []
 drawer = {}
