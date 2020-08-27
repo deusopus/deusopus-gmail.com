@@ -82,7 +82,6 @@ def rochambeau(t,w,l):
   choices = ['rock', 'paper', 'scissors']
   while True:
     c_c = random.choice(choices)
-    print(c_c)
     print("Make your choice...")
     print ("(R)ock, (P)aper, (S)cissors")
     p_c = input("Go!: ")
