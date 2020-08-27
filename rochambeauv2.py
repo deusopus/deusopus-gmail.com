@@ -11,7 +11,7 @@ def play_again(t,w,l):
     w = 0
     l = 0
     rochambeau(t,w,l)
-  return t,w,l,c
+  return t,w,l
 def score(t,w,l):
   print("Turns: %s" % t)
   print("Wins: %s" % w)
