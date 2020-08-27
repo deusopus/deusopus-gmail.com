@@ -1,6 +1,6 @@
 # 'Rochambeau' by Brent K Kohler AKA deusopus
-t,w,l,c = 0,0,0,0
-def play_again(t,w,l,c):
+t,w,l = 0,0,0
+def play_again(t,w,l):
   y = input("Would you like to play again?: (Y/n)")
   if y.lower().strip() == "n":
     print("See you next time")
@@ -12,7 +12,7 @@ def play_again(t,w,l,c):
     l = 0
     rochambeau(t,w,l)
   return t,w,l,c
-def score(t,w,l,c):
+def score(t,w,l):
   print("Turns: %s" % t)
   print("Wins: %s" % w)
   print("Losses: %s" % l)
