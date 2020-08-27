@@ -5,7 +5,6 @@ def play_again(t,w,l):
   if y.lower().strip() == "n":
     print("See you next time")
     print("Goodbye")
-    quit()
   else:
     t = 0
     w = 0
