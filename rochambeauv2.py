@@ -5,6 +5,7 @@ def play_again(t,w,l):
   if y.lower().strip() == "n":
     print("See you next time")
     print("Goodbye")
+    quit()
   else:
     t = 0
     w = 0
@@ -28,28 +29,28 @@ def score(t,w,l):
   if t == 2:
     if w == 0:
       if l == 2:
-        print("You lose...")
-        print("GAME OVER")
-        play_again(t,w,l)
+        chance = input("Try for best 3 out of 5?: (Y/n)")
+        if chance.lower().strip() == "n":
+          print("Better luck next time!")
+          print("GAME OVER")
+          quit()   
+  if t == 3:
+    if w == 1:
+      if l == 2:
+        print("Keep trying...")
   if t == 3:
     if w == 2:
       if l == 1:
          print("Good job...")
          print("GAME OVER")
          play_again(t,w,l)
-  if t ==3:
-    if w == 1:
-      if l == 2:
-        chance = input("Try for best 3 out of 5?: (Y/n)")
-        if chance.lower().strip() == "n":
-          print("Better luck next time!")
-          print("GAME OVER")
-          quit()            
-  if t == 4:
-    if w == 2:
-      if l == 2:
-        print("Here's the tie-breaker!")
-  if t == 4:
+  if t == 3:
+    if w == 0:
+      if l == 3:
+        print("Sorry...")
+        print("GAME OVER")
+        play_again(t,w,l)
+  if t == 4
     if w == 1:
       if l == 3:
         print("Nice try...")
