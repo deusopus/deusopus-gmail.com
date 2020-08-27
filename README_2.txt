@@ -13,9 +13,9 @@ pages and I would take them home and enter them into my TRS-80 Model III (and la
 1000) and I would figure out how to improve the programs by making them work better or adding
 some kinds of improvements. I used to love playing text based adventure games. My favorites
 were Hitchhiker's Guide to the Galaxy, Police Quest, Day of the Tentacle, and Monkey Island.
-When I was in 5th grade, my school had a 'Self-Esteem' week that ended in a balloon release by
-the whole school out in the soccer field. My balloon went the farthest. It went all the way to
-South Dakota and I was in the local Federal Way paper about it. 
+When I was in 5th grade, my school had a 'Self-Esteem' week that ended in a balloon release
+by the whole school out in the soccer field. My balloon went the farthest. It went all the
+way to South Dakota and I was in the local Federal Way paper about it. 
 
 TO BE CONTINUED...
 
