@@ -14,13 +14,12 @@ def play_again(t,w,l,c):
     rochambeau(t,w,l,c)
   return t,w,l,c
 def score(t,w,l,c):
-  print(f"Turns: {t}")
-  print(f"Wins: {w}")
-  print(f"Losses: {l}")
+  print("Turns: %s" % t)
+  print("Wins: %s" % w)
+  print("Losses: %s" % l)
   if t == 2:
     if w == 2:
       print("You win!")
-      print("You get dibs")
       print("Game Over")
       play_again(t,w,l,c)
   if t== 2:
@@ -52,20 +51,19 @@ def score(t,w,l,c):
   if t == 3:
     if w == 0:
       if l == 3:
-        print("Thanks for trying")
+        print("Thanks for playing!")
         print("Game Over")
         quit()
   if t == 3:
     if w == 2:
       if l == 1:
         print("You win!")
-        print("You get dibs")
-        print("Goodbye")
+        print("Game Over")
         play_again(t,w,l,c)
   if t == 4:
     if w == 1:
       if l == 3:
-        print("Sorry...")
+        print("So close!")
         print("Game Over")
         play_again(t,w,l,c)
   if t == 4:
@@ -75,14 +73,13 @@ def score(t,w,l,c):
   if t == 5:
     if w == 2:
       if l == 3:
-        print("Sorry...")
+        print("So close!")
         print("Game Over")
         play_again(t,w,l,c)     
   if t == 5:
     if w == 3:
       if l == 2:
         print("You win!")
-        print("You get dibs")
         print("Game Over")
         play_again(t,w,l,c)
   return t,w,l,c
