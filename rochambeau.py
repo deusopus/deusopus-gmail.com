@@ -31,13 +31,13 @@ def score(t,w,l):
       if l == 2:
         chance = input("Try for best 3 out of 5?: (Y/n)")
         if chance.lower().strip() == "n":
-          print("Better luck next time!")
+          print("Thanks for trying!")
           print("GAME OVER")
           quit()   
   if t == 3:
     if w == 1:
       if l == 2:
-        print("Keep trying...")
+        print("Almost there...")
   if t == 3:
     if w == 2:
       if l == 1:
@@ -50,7 +50,11 @@ def score(t,w,l):
         print("Sorry...")
         print("GAME OVER")
         play_again(t,w,l)
-  if t == 4
+  if t == 4:
+    if w == 2:
+      if l == 2:
+        print("Here's the tie-breaker...")
+  if t == 4:
     if w == 1:
       if l == 3:
         print("Nice try...")
