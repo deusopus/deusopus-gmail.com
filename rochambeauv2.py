@@ -19,25 +19,25 @@ def score(t,w,l):
   if t == 2:
     if w == 2:
       if l == 0:
-        print("You win!")
+        print("Perfect!")
         print("GAME OVER")
         play_again(t,w,l)
   if t == 2:
     if w == 1:
       if l == 1:
-        print("You got this...")
+        print("You've got this...")
   if t == 2:
     if w == 0:
       if l == 2:
         print("You lose...")
         print("GAME OVER")
         play_again(t,w,l)
-  if t ==3:
-    if w == 0:
-      if l == 3:
-        print("You lose...")
-        print("GAME OVER")
-        play_again(t,w,l)
+  if t == 3:
+    if w == 2:
+      if l == 1:
+         print("Good job...")
+         print("GAME OVER")
+         play_again(t,w,l)
   if t ==3:
     if w == 1:
       if l == 2:
@@ -45,11 +45,7 @@ def score(t,w,l):
         if chance.lower().strip() == "n":
           print("Better luck next time!")
           print("GAME OVER")
-          quit()           
-  if t == 3:
-    if w == 2:
-      if l == 1:
-         print("Almost...")
+          quit()            
   if t == 4:
     if w == 2:
       if l == 2:
@@ -57,19 +53,19 @@ def score(t,w,l):
   if t == 4:
     if w == 1:
       if l == 3:
-        print("So close!")
+        print("Nice try...")
         print("GAME OVER")
         play_again(t,w,l) 
   if t == 5:
-    if w == 2:
-      if l == 3:
-        print("So close!")
+    if w == 3:
+      if l == 2:
+        print("Excellent!")
         print("GAME OVER")
         play_again(t,w,l)     
   if t == 5:
-    if w == 3:
-      if l == 2:
-        print("You win!")
+    if w == 2:
+      if l == 3:
+        print("Better luck next time!")
         print("GAME OVER")
         play_again(t,w,l)
   return t,w,l
@@ -102,19 +98,19 @@ def rochambeau(t,w,l):
             print("Try again")
             time.sleep(2)
     if p_c.lower().strip() == "r":
-      print ("I choose", c_c.title())
+      print("You've chosen Rock")
       time.sleep(2)
-      print("You chose Rock")
+      print ("I chose", c_c.title())
       time.sleep(2)
     if p_c.lower().strip() == "p":
-      print ("I choose", c_c.title())
+      print("You've chosen Paper")
       time.sleep(2)
-      print("You chose Paper")
+      print ("I chose", c_c.title())
       time.sleep(2)
     if p_c.lower().strip() == "s":
-      print ("I choose", c_c.title())
+      print("You've chosen Scissors")
       time.sleep(2)
-      print("You chose Scissors")
+      print ("I chose", c_c.title())
       time.sleep(2)
     if p_c.lower().strip() == "r":
       if c_c == "rock":
