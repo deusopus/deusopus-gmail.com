@@ -9,4 +9,4 @@ LTC: LNUc3ShzvB1my1GdaJdo9uJ2L85xcbJi39
 DOGE: D8eQgEX3B3TJYqFDgYQMj6RbfxvrhJEu5K 
 
 Mahalo!
-deusopus@gmail.com
+deusopus@cannachan.com
